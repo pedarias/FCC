@@ -1,228 +1,94 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-# FCC-Machine-Learning-with-python
-## Context
-My 5 Machine Learning projects that I've built as part of my freeCodeCamp assignments.
-<br>
-## Overview
-The course notebooks and building these projects allowed me to familiarize myself with fundamental Machine Learning techniques.
-I learned the specializations and applications of Machine Learning algorithms like regression, classification, and clustering.
-## Certification
-These projects also allowed me to obtain my <a href="https://www.freecodecamp.org/certification">freeCodeCamp Machine Learning Certification</a>.
-=======
-# Scientific Computing with Python
+# FCC Unified Repository
 
-This respository contains my solutions to the Scientific Computing with Python Certification projects
-as well as the respective test and data files.
+Este repositório contém todos os projetos e exercícios desenvolvidos como parte dos cursos da **freeCodeCamp** em diferentes áreas, incluindo Data Analysis, Machine Learning, Scientific Computing, College Algebra e JavaScript Algorithms and Data Structures.
 
-- Arithmetic Formatter
-- Time Calculator
-- Budget App
-- Polygon Area Calculator
-- Probability Calculator
-## Certification
-These projects also allowed me to obtain my <a href="https://www.freecodecamp.org/certification/fcc5749a458-3e81-4be0-bc3b-2d349878c1bc/scientific-computing-with-python-v7">Scientific Computing with Python Certification</a> which is a Developer Certification, representing approximately 300 hours of coursework.
->>>>>>> scientific-computing/main
-=======
-# College Algebra with Python-freecodecamp
-<h4>Course description: </h4>
-https://www.freecodecamp.org/learn/college-algebra-with-python/ <br> <br>
-This course is designed as a one-semester college course. It consists of instructional videos, with Google Colaboratory notebooks to follow along interactively, assignments, and challenging projects.
+Abaixo está uma descrição dos cursos e os projetos que podem ser encontrados dentro de suas respectivas pastas.
 
-This respository contains my solutions to the College Algebra with Python Certification projects. It provides a clear understanding of Algebra and how to write Python code to solve Algebra problems.
+---
 
-## Certification
-These projects also allowed me to obtain my <a href="https://www.freecodecamp.org/certification/fcc5749a458-3e81-4be0-bc3b-2d349878c1bc/college-algebra-with-python-v8">College Algebra with Python Certification</a> which is a Developer Certification, representing approximately 300 hours of coursework.
+## 📊 FCC-Data-Analysis-with-python
 
->>>>>>> college-algebra/main
-=======
-# FreeCodeCamp
-[freeCodeCamp.org](https://www.freecodecamp.org/)  is a organization to help people learn coding free. This repository contains my solutions to get a responsive web design certificate. 
+Nesta seção, você encontrará os projetos desenvolvidos durante o curso de **Análise de Dados com Python**.
 
-#### [Certification](https://www.freecodecamp.org/certification/fcc5749a458-3e81-4be0-bc3b-2d349878c1bc/javascript-algorithms-and-data-structures) 
+### Projetos:
+- `Mean-variance-standard-deviation-calculator`: Calculadora de média, variância e desvio padrão.
+- `Medical-data-visualizer`: Visualizador de dados médicos.
+- `Page-view-time-series-visualizer`: Visualizador de séries temporais de visualização de páginas.
+- `Demographic-data-analyzer`: Analisador de dados demográficos.
+- `Sealevel`: Análise de dados sobre o nível do mar.
 
-<br/>
+Todos os projetos estão na pasta: [`Data-Analysis/`](./Data-Analysis)
 
-# fcc-javascript-algorithms-and-data-structures
-5 Projects I did through the FreeCodeCamp.org - JavaScript Algorithms and Data Structures course
+---
 
-I have provided a brief description and the code of each project. They can also be viewed through the folders above. 
+## 🤖 FCC-Machine-Learning-with-python
 
-## Palindrome Checker
-I created a function that checks if a string is a palindrome by creating a reverse string of the original string and setting them equal to each other. 
-```javascript
-function palindrome(str) {
-  const testString = str.toLowerCase().match(/[a-z0-9]/g);
+Aqui estão os projetos desenvolvidos no curso de **Machine Learning com Python**.
 
-  if (testString.join('') === testString.reverse().join('')){
-    return true;
-  }
-  else {
-    return false;
-  }
-}
+### Projetos:
+- `Neural_Network_SMS_Text_Classifier`: Classificador de textos SMS usando redes neurais.
+- `fcc-rock-paper-scissors`: Implementação de um jogo de Pedra, Papel, Tesoura.
+- `fcc_book_recommendation_knn`: Sistema de recomendação de livros utilizando KNN.
+- `fcc_cat_dog`: Classificação de imagens de gatos e cachorros.
+- `fcc_predict_health_costs_with_regression`: Previsão de custos de saúde utilizando regressão.
 
+Todos os projetos estão na pasta: [`Machine-Learning/`](./Machine-Learning)
 
+---
 
-palindrome("eye");
-```
+## 🔬 FCC-Scientific-Computing-with-python
 
-##Roman Numeral Converter
-I created a function that takes a number and converts it into a roman numeral by using a roman numeral table and subtracting each roman symbol from the number. 
-```javascript
-function convertToRoman(num) {
- const romanTable = {
-   M: 1000,
-   CM: 900,
-   D: 500,
-   CD: 400,
-   C: 100,
-   XC: 90,
-   L: 50,
-   XL: 40,
-   X: 10,
-   IX: 9,
-   V: 5,
-   IV: 4,
-   I: 1,
- };
- 
- let accumulator = '';
+Esta seção contém os projetos desenvolvidos no curso de **Computação Científica com Python**.
 
- for (const symbol in romanTable) {
-   const romanEquals = romanTable[symbol];
-   while (romanEquals <= num) {
-     num-= romanEquals;
-     accumulator+=symbol;
-   }
-  }
-  return accumulator;
-}
+### Projetos:
+- `arithmetic-formatter`: Formatador de operações aritméticas.
+- `budget-app`: Aplicação para controle de orçamento.
+- `polygon-area-calculator`: Calculadora de área de polígonos.
+- `probability-calculator`: Calculadora de probabilidades.
+- `time-calculator`: Calculadora de tempo.
 
-convertToRoman(36);
-```
+Todos os projetos estão na pasta: [`Scientific-Computing/`](./Scientific-Computing)
 
-##Caesars Cipher
-I created a ROT13 cipher function that takes a value of a letter and shifts it by 13 places. 
-```javascript
-const letter = [
-  'A',
-  'B',
-  'C',
-  'D',
-  'E',
-  'F',
-  'G',
-  'H',
-  'I',
-  'J',
-  'K',
-  'L',
-  'M',
-  'N',
-  'O',
-  'P',
-  'Q',
-  'R',
-  'S',
-  'T',
-  'U',
-  'V',
-  'W',
-  'X',
-  'Y',
-  'Z'                                      
-];
+---
 
+## 📐 FCC-CollegeAlgebra-with-python
 
-function rot13(str) {
-  let accumulator = '';
+Aqui estão os projetos desenvolvidos durante o curso de **Álgebra de Faculdade com Python**.
 
-  for (let x = 0; x < str.length; x++) {
-    const char = str[x];
-    const aLetter = letter.includes(char);
-    if (aLetter) {
-      const charValue = letter.findIndex((c) => c === char);
-      accumulator += letter[charValue + 13] || letter[charValue - 13];
-    } else {
-      accumulator+= char;
-    }
-  }
-  return accumulator;
-}
+### Projetos:
+- `Data_Graph_Explorer.ipynb`: Explorador de gráficos de dados.
+- `FinancialCalculator.ipynb`: Calculadora financeira.
+- `GRAPHCalculator.ipynb`: Calculadora gráfica.
+- `Three_Math_Games.ipynb`: Três jogos matemáticos.
+- `Your_calculator.ipynb`: Sua própria calculadora personalizada.
 
-console.log(rot13("SERR PBQR PNZC"));
-```
+Todos os projetos estão na pasta: [`College-Algebra/`](./College-Algebra)
 
-##Telephone Number Validator
-Here, I created a function that returns `true` if the passed string resesmbled a U.S. phone number.
-```javascript
-function telephoneCheck(str) {
-  const validNumbers = [
-    /1\(\d{3}\)\d{3}-\d{4}/,
-    
-    /^\d{10}$/,
+---
 
-    /^1 \d{3}-\d{3}-\d{4}$/,
-    
-    /^1 \(\d{3}\) \d{3}-\d{4}$/,
+## 📚 FCC-JavaScript-Algorithms-and-Data-Structures
 
-    /^1 \d{3} \d{3} \d{4}$/,
+Aqui estão os projetos desenvolvidos no curso de **Algoritmos e Estruturas de Dados com JavaScript**.
 
-    /^1\d{3}-\d{3}-\d{4}$/,
+### Projetos:
+- `caesars cipher`: Cifra de César.
+- `cash register`: Caixa registradora.
+- `palindrome checker`: Verificador de palíndromos.
+- `roman numeral converter`: Conversor de números romanos.
+- `telephone number validator`: Validador de números de telefone.
 
-    /^\d{3}-\d{3}-\d{4}$/,
+Todos os projetos estão na pasta: [`JavaScript-Algorithms/`](./JavaScript-Algorithms)
 
-    /^\(\d{3}\)\d{3}-\d{4}/
-  ]
-  return validNumbers.some((sample) => sample.test(str));
-}
+---
 
-telephoneCheck("555-555-5555");
-```
+### Estrutura do Repositório
 
-##Cash Register
-I created a function that acts like a cash register. It returns if the cash register has enough funds for change. 
-```javascript
-function checkCashRegister(price, cash, cid) {
-  let cashArr = cid.map(e => e[1]*100),
-      converted = [1, 5, 10, 25, 100, 500, 1000, 2000, 10000],
-      rawChange = ((cash - price)*100),
-      cashRegister = [["PENNY", 0],  ["NICKEL", 0],  ["DIME", 0],  ["QUARTER", 0],  ["ONE", 0],  ["FIVE", 0],  ["TEN", 0],  ["TWENTY", 0],  ["ONE HUNDRED", 0]],
-      change = {status: "", change: []};
-  for (let x = cashArr.length - 1; x >= 0; x--) {
-    while(cashArr[x] > 0) {
-      if (rawChange - converted[x] >= 0) {
-        cashRegister[x][1] += converted[x];
-        rawChange -= converted[x];
-        cashArr[x] -= converted[x];       
-      } else { break; }
-    }
-    if (rawChange === 0) {break;}
-  }
-  for (let i = cashRegister.length -1;i >= 0; i--){
-    if (cashRegister[i][1] !== 0){
-      cashRegister[i][1] = cashRegister[i][1]/100
-    }
-  }
-  if (rawChange !== 0) {
-    change.status = "INSUFFICIENT_FUNDS";
-    return change;
-  }
-  else if (rawChange === 0 && JSON.stringify(cashRegister)==JSON.stringify(cid)) {    
-    change.status = "CLOSED";
-    change.change = cashRegister;
-    return change;        
-  }
-  else {  
-    cashRegister = cashRegister.filter(e => e[1] !== 0).reverse();  
-    change.status = "OPEN";
-    change.change = cashRegister;
-    return change;
-  }
-}
+- `Data-Analysis/`: Projetos de Análise de Dados com Python.
+- `Machine-Learning/`: Projetos de Machine Learning com Python.
+- `Scientific-Computing/`: Projetos de Computação Científica com Python.
+- `College-Algebra/`: Projetos de Álgebra de Faculdade com Python.
+- `JavaScript-Algorithms/`: Projetos de Algoritmos e Estruturas de Dados com JavaScript.
 
-checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
-```
->>>>>>> javascript-algorithms/main
+---
+
+Este repositório serve como um compilado dos projetos desenvolvidos durante os cursos da **freeCodeCamp**, cobrindo diversas áreas da ciência da computação e da programação.
